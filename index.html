@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ojol Interaktif App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🚀 Ojol Interaktif</h1>
+    <p>Jualan • Cerita • Komunitas</p>
+  </header>
+
+  <section class="container">
+
+    <!-- REGISTER -->
+    <div class="card">
+      <h2>📌 Pendaftaran User</h2>
+      <input type="text" id="nama" placeholder="Nama">
+      <input type="text" id="alamat" placeholder="Alamat">
+      <input type="text" id="hp" placeholder="No HP">
+      <input type="email" id="email" placeholder="Email">
+      <button onclick="register()">Daftar</button>
+    </div>
+
+    <!-- JUALAN -->
+    <div class="card">
+      <h2>🛒 Posting Jualan</h2>
+      <input type="text" id="produk" placeholder="Nama Produk">
+      <input type="text" id="harga" placeholder="Harga">
+      <button onclick="addProduk()">Posting</button>
+      <div id="listProduk"></div>
+    </div>
+
+    <!-- CERITA -->
+    <div class="card">
+      <h2>📖 Cerita Pengguna</h2>
+      <textarea id="cerita" placeholder="Tulis cerita kamu..."></textarea>
+      <button onclick="addCerita()">Kirim</button>
+      <div id="listCerita"></div>
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
